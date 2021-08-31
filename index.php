@@ -31,7 +31,7 @@
                     <li><a href="#services">¿Por qué Rozdac?</a></li>
                     <li><a href="#team">Equipo</a></li>
                     <?php if(isset($_SESSION['userid'])){ ?><li><a href="apis/cliente/negocios.php">Mis Negocios</a></li><?php } ?>
-                    <li><?php if(isset($_SESSION['userid'])){ ?><a href="#"><?php echo $_SESSION['userid']; ?></a> <?php }else{ ?><a href="login.php" id="login"><i class="fas fa-sign-in-alt"></i> Iniciar sesión</a> <?php } ?> </li>
+                    <li><?php if(isset($_SESSION['userid'])){ ?><a href="#"><?php echo $_SESSION['userid']; ?></a> <?php }else{ ?><a href="html/login.php" id="login"><i class="fas fa-sign-in-alt"></i> Iniciar sesión</a> <?php } ?> </li>
                     <?php if(isset($_SESSION['userid'])){ ?><li><a href="Procesos/Controlador/logout.php">Cerrar Sesión</a></li><?php } ?>
                 </ul>
             </nav>
