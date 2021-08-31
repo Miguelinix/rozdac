@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+/*HEAD*/
+.head{
+   margin-top: 10%;
+}
+
+.backg a{
+    font-family: 'Catamaran', sans-serif;
+    color: white;
+    text-decoration: none;
+    margin-top: 18%;
+    margin-left: -53%;
+    border: solid white 1px;
+    padding: 5px;
+    position: absolute;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.backg img{
+    border-radius: 15px;
+    width: 800px;
+    margin-left: 20vw;
+   
+}
+.backg a:hover{
+    color: black;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.text {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: bold;
+  font-size: 54px;
+  position: absolute;
+  width: 450px;
+  left: 27%;
+  height: 40px;
+  top: 36%;
+}
+.text p {
+  display: inline-block;
+  vertical-align: top;
+  color: white;
+  margin: 0;
+}
+.word {
+  position: absolute;
+  width: 220px;
+  opacity: 0;
+}
+.letter {
+  display: inline-block;
+  position: relative;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.word{
+    color: #F2CB05;
+}
+/*BODY*/
+.body h1, h2{
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    margin-top: 3%;
+}
+.body p{
+    font-family: 'Catamaran', sans-serif;
+    text-align: justify;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+
+.descp{
+    margin-top: -15%;
+    padding-top: 25%;
+    padding-bottom: 5%;
+    background-color: #F2CB05;
+}
+.descp .fas{
+    color: white;
+    font-size: 100px;
+    margin-left: 45.5vw;
+    margin-bottom: 1%;
+}
+.descp h1{
+    color: white;
+    margin-bottom: 1%;
+}
+.descp p{
+    color: white;
+}
+
+.serv img{
+    width: 400px;
+    margin-top: 4%;
+    margin-left: 35%;
+}
+.serv h2{
+    margin-top: 3%;
+    text-align: center;
+    background-color: #F2CB05;
+    padding: 5px;
+    color: white;
+    margin-left: 40vw;
+    margin-right: 40vw;
+    border-radius: 5px;
+}
+.serv p{
+    margin-top: 2%;
+}
+
+.eqp img{
+    margin-left: 35%;
+}
+.eqp p{
+    text-align: center;
+    margin-top: 3%;
+}
+
+.cards {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  margin-left: 38%;
+  margin-bottom: 4%;
+  border-radius: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #ffffff;
+  text-align: left;
+  line-height: 1.4em;
+  background-color: #141414;
+}
+.cards * {
+  box-sizing: border-box;
+}
+.cards img {
+  max-width: 100%;
+  vertical-align: top;
+  opacity: 0.85;
+}
+.cards figcaption {
+  width: 100%;
+  background-color: #F2CB05;
+  padding: 25px;
+  position: relative;
+}
+.cards .profile {
+  border-radius: 50%;
+  margin-top: -30%;
+  left: 25px;
+  z-index: 1;
+  max-width: 90px;
+  opacity: 1;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.cards .follow {
+  font-family: 'Catamaran', sans-serif;
+  padding: 5px;
+  border: 1px solid #141414;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin: 10px 0;
+  display: inline-block;
+  width: 47%;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-right: 4%;
+  color: #141414;
+}
+.cards h2 {
+    font-weight: bold;
+  margin: 0 0 5px;
+  font-weight: 600;
+}
+.cards h2 span {
+  font-weight: bold;
+  display: block;
+  font-size: 0.5em;
+  color: black;
+}
+.cards p {
+  font-family: 'Catamaran', sans-serif;
+  margin: 0 0 10px;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+}
+#this{
+    height: 70px;
+    width: 70px;
+}
+.lp span{
+    color: #F2CB05;
+}
+.lp img{
+    margin-left: 35%;
+}
+.lp a{
+    font-family: 'Catamaran', sans-serif;
+    color: black;
+    text-decoration: none;
+    border: solid black 1px;
+    margin-top: 20%;
+    margin-left: -22%;
+    padding: 5px;
+    position: absolute;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.lp a .fas{
+    color: #F2CB05;
+}
+#description{
+    color: transparent;
+    margin-bottom: 5%;
+}
+#services{
+    color: transparent;
+    margin-bottom: 5%;
+}
+#team{
+    color: transparent;
+    margin-bottom: 5%;
+}
+
+/*RESPONSIVE*/
+@media screen and (min-width: 1440px){
+    .backg img{
+        margin-left: 22vw;
+    }
+    .backg a{
+        margin-left: -50.5%;
+        margin-top: 16%;
+    }
+    .lp a{
+        margin-left: -20%;
+    }
+    .cards{
+        margin-left: 40%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .backg img{
+        margin-left: 12vw;
+        margin-top: 3%;
+        width: 750px;
+    }
+    .backg a{
+       margin-left: -65%;
+       margin-top: 25%;
+    }
+    .text{
+        left: 20%;
+        top: 38%;
+    }
+    .descp .fas{
+        margin-left: 45vw;
+    }
+    .serv img{
+        margin-left: 30%;
+    }
+    .serv h2{
+        margin-left: 38vw;
+        margin-right: 38vw;
+    }
+    .cards{
+        margin-left: 35%;
+    }
+    .lp img{
+        margin-left: 30%;
+    }
+    .lp a{
+        margin-top: 26%;
+        margin-left: -28%;
+    }
+    #description{
+        margin-bottom: 6%;
+    }
+    #services{
+        margin-bottom: 6%;
+    }
+    #team{
+        margin-bottom: 6%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #log{
+        margin-left: 45%;
+    }
+    .menu li{
+        margin-left: 15%;
+        margin-right: 20%;
+    }
+    .head{
+        margin-top: 22%;
+    }
+    .backg img{
+        margin-left: 11vw;
+        width: 600px;
+    }
+    .backg a{
+       margin-left: -73%;
+       margin-top: 26%;
+    }
+    .text{
+        left: 16%;
+        top: 46%;
+    }
+    .descp .fas{
+        margin-left: 44vw;
+    }
+    .serv img{
+        width: 300px;
+    }
+    .serv h2{
+        margin-left: 34vw;
+        margin-right: 34vw;
+    }
+    .cards{
+        margin-left: 30%;
+    }
+    .lp img{
+        margin-left: 25%;
+    }
+    .lp a{
+        margin-top: 35%;
+        margin-left: -38%;
+    }
+}
+
+@media screen and (max-width: 425px){
+    #log{
+        margin-left: 60%;
+    }
+    .menu li{
+        margin-left: 5%;
+        margin-right: 25%;
+    }
+    .backg img{
+        margin-left: 8vw;
+        width: 350px;
+    }
+    .backg a{
+       display: none;
+    }
+    .text{
+        left: 13%;
+        top: 22%;
+        font-size: 30px;
+    }
+    .descp .fas{
+        margin-left: 38vw;
+    }
+    .serv img{
+        margin-left: 20%;
+        width: 250px;
+    }
+    .serv h2{
+        margin-left: 20vw;
+        margin-right: 20vw;
+    }
+    .cards{
+        margin-left: 12%;
+    }
+    .lp h1{
+        margin-top: 15%;
+        margin-right: 8%;
+        margin-left: 5%;
+    }
+    .lp img{
+        margin-left: 5%;
+        width: 350px;
+    }
+    .lp a{
+        margin-top: 50%;
+        margin-left: -59%;
+    }
+    #description{
+        margin-bottom: 10%;
+    }
+    #services{
+        margin-bottom: 10%;
+    }
+    #team{
+        margin-bottom: 10%;
+    }
+}
+
+@media screen and (max-width: 375px){
+    #log{
+        margin-left: 55%;
+    }
+    .menu li{
+        margin-left: 5%;
+        margin-right: 35%;
+    }
+    .backg img{
+        margin-left: 9vw;
+        width: 300px;
+    }
+    .text{
+        top: 20%;
+        font-size: 25px;
+    }
+    .descp .fas{
+        margin-left: 36vw;
+    }
+    .serv img{
+        margin-left: 18%;
+    }
+    .cards{
+        margin-left: 7%;
+    }
+    .lp img{
+        margin-left: 2%;
+    }
+    .lp a{
+        margin-top: 55%;
+        margin-left: -64%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    #log{
+        margin-left: 45%;
+    }
+    .menu li{
+        margin-left: 5%;
+        margin-right: 45%;
+    }
+    .backg img{
+        margin-left: 9vw;
+        width: 250px;
+    }
+    .text{
+        top: 18%;
+        font-size: 20px;
+    }
+    .serv img{
+        width: 200px;
+    }
+    .serv h2{
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    .cards{
+        margin-left: 7%;
+        width: 80%;
+    }
+    .lp img{
+        margin-left: 1%;
+        width: 300px;
+    }
+    .lp a{
+        margin-top: 57%;
+        margin-left: -70%;
+    }
+}
